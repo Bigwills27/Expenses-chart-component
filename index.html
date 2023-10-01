@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="json" href="./data.json">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="heading">
+      <div class="balance-ctn">
+        <p class="bal-txt">My balance</p>
+        <p class="bal">$<span class="bal-num">0</span></p>
+      </div>
+
+      <img src="./images/logo.svg" alt="logo" class="logo">
+    </div>
+
+    <!-- graph card -->
+    <div class="graph-card">
+      <h1 class="graph-head">Spending - Last 7 days</h1>
+
+      <!-- Graph -->
+      <div class="graph">
+        <div class="mon-ctn block-ctn">
+          <div class="spent">$<span class="spent-num"></span></div>
+          <div class="mon-block block"></div>
+          <p class="mon-txt txst">mon</p>
+        </div>
+
+        <div class="tue-ctn block-ctn">
+          <div class="spent">$<span class="spent-num"></span></div>
+          <div class="tue-block block"></div>
+          <p class="tue-txt txst">tue</p>
+        </div>
+
+        <div class="wed-ctn block-ctn">
+          <div class="spent">$<span class="spent-num"></span></div>
+          <div class="wed-block block"></div>
+          <p class="wed-txt txst">wed</p>
+        </div>
+
+        <div class="thur-ctn block-ctn">
+          <div class="spent">$<span class="spent-num"></span></div>
+          <div class="thur-block block"></div>
+          <p class="thur-txt txst">thur</p>
+        </div>
+
+        <div class="fri-ctn block-ctn">
+          <div class="spent">$<span class="spent-num"></span></div>
+          <div class="fri-block block"></div>
+          <p class="fri-txt txst">fri</p>
+        </div>
+
+        <div class="sat-ctn block-ctn">
+          <div class="spent">$<span class="spent-num"></span></div>
+          <div class="sat-block block"></div>
+          <p class="sat-txt txst">sat</p>
+        </div>
+
+        <div class="sun-ctn block-ctn">
+          <div class="spent">$<span class="spent-num"></span></div>
+          <div class="sun-block block"></div>
+          <p class="sun-txt txst">sun</p>
+        </div>
+
+      </div>
+
+      <!-- more info sec -->
+      <div class="card-bottom">
+        <div class="bottom-left">
+          <h3 class="total-head">Total this month</h3>
+          <p class="total">$<span class="total-num">0</span></p>
+        </div>
+
+        <!-- bottom right -->
+        <div class="bottom-right">
+          <p class="increase-percent">+2.4%</p>
+          <p class="increase-txt">from last month</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="data.json"></script>
+</body>
+
+</html>
+
+<!-- My balance
+  $921.48
+
+  Spending - Last 7 days
+
+  mon
+  tue
+  wed
+  thu
+  fri
+  sat
+  sun
+
+  Total this month
+  $478.33
+
+  +2.4%
+  from last month
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
